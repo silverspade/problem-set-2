@@ -8,6 +8,7 @@
  * (and demonstrated, when appropriate) in the README file.
  */
 
+import java.util.Scanner;
 public class ProblemSet2 {
 	
 	/**
@@ -25,6 +26,10 @@ public class ProblemSet2 {
 	}
 	
 	public void sayHello() {
+		System.out.println("What's your first name?");
+		Scanner first = new Scanner(System.in);
+		String text = first.nextLine();
+		first.close();
 		
 	}
 	
