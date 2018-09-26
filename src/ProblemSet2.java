@@ -27,10 +27,12 @@ public class ProblemSet2 {
 	
 	public void sayHello() {
 		System.out.println("What's your first name?");
-		Scanner first = new Scanner(System.in);
-		String text = first.nextLine();
-		first.close();
-		
+		Scanner in = new Scanner(System.in);
+		String text = in.nextLine();
+		System.out.println("What's your last name?");
+		String text2 = in.nextLine();
+		in.close();
+		System.out.println("Hello, " + text + " " + text2 + "!");
 	}
 	
 	public void gradeMe() {
